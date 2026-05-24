@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f7f4ef;
+  color: #201a17;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, select { font: inherit; }
+
+.shell {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, rgba(167, 38, 38, .14), transparent 36rem), linear-gradient(135deg, #fbfaf7 0%, #f3eee7 100%);
+}
+.card {
+  background: rgba(255,255,255,.86);
+  border: 1px solid rgba(87, 65, 52, .14);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(47, 32, 24, .08);
+}
+.btn {
+  border: 0;
+  border-radius: 999px;
+  padding: .72rem 1.05rem;
+  font-weight: 750;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary { background: #9f1d24; color: white; box-shadow: 0 12px 28px rgba(159,29,36,.22); }
+.btn-secondary { background: #efe7dc; color: #402d25; }
+.btn-ghost { background: transparent; color: #6f1d24; }
+.input {
+  width: 100%; border: 1px solid rgba(87,65,52,.18); border-radius: 14px; padding: .75rem .85rem; background: white;
+}
+.badge { display:inline-flex; gap:.35rem; align-items:center; border-radius:999px; padding:.32rem .65rem; font-size:.78rem; font-weight:750; background:#f4e7e7; color:#84202a; }
+.progressbar { height: .7rem; border-radius: 999px; background: #eadfd6; overflow:hidden; }
+.progressbar > div { height:100%; background: linear-gradient(90deg, #9f1d24, #d9683c); border-radius:999px; }
